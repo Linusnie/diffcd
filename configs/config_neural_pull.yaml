@@ -1,0 +1,11 @@
+!dataclass:TrainingConfig
+checkpoint_options: !dataclass:CustomCheckpointManagerOptions
+  save_interval_steps: 1000
+method: !dataclass:NeuralPull
+  sampling: !dataclass:SamplingConfig
+    samples_per_point: 50
+dataset: !dataclass:PointCloud
+  path: ''
+output_dir: outputs
+model: !dataclass:MLP
+  activation_function: !enum:ActivationFunction SOFTPLUS

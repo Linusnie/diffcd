@@ -1,0 +1,13 @@
+!dataclass:TrainingConfig
+checkpoint_options: !dataclass:CustomCheckpointManagerOptions
+  save_interval_steps: 1000
+method: !dataclass:IGR
+  eikonal_weight: 0.1
+  alpha: 100
+  surface_area_samples: 5000
+  surface_area_weight: 0.033
+dataset: !dataclass:PointCloud
+  path: ''
+output_dir: outputs
+model: !dataclass:MLP
+  activation_function: !enum:ActivationFunction SOFTPLUS
