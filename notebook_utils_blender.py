@@ -115,6 +115,9 @@ def render_image(output_path, resolution, samples=100):
     bpy.ops.render.render(write_still=True)
 
 def setup_scene(clear=False, camera_location=None, camera_rotation=None, resolution=None):
+    if "Cube" in bpy.data.objects:
+        bpy.data.objects.remove(bpy.data.objects["Cube"])
+
     if camera_location is None:
         camera_location = np.array([0, -5.321560, 2.042498]) * 0.6
     if camera_rotation is None:
