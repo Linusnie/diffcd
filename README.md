@@ -103,7 +103,10 @@ The same grid for other methods can be found under [images/results](images/resul
 
 ### Model checkpoints
 
-(coming soon)
+The trained models and evaluation results from the paper can be downloaded via this [google drive link](https://drive.google.com/drive/folders/1JHbsQ2eicajG7VMi8YHmnyT4An0yAuvr?usp=sharing).
+
+The folder contains the output from `fit_implicit.py` for each input shape and parameter setting.
+Make sure to update the `base_dir` variable in `evaluation.ipynb` to match the download location.
 
 ### Set up 3D visualizations
 
