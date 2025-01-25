@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+
+setup(
+	name='diffcd',
+	version='0.1.0',
+	description='Official implementation of "DiffCD: A Symmetric Differentiable Chamfer Distance for Neural Implicit Surface Fitting"',
+	author='Linus Härenstam-Nielsen',
+	author_email='linus.nielsen@tum.de',
+	url='https://github.com/linusnie/diffcd',
+	packages=find_packages(),
+	install_requires=[
+		"numpy",
+		"jax[cuda12]",
+		"jaxlib",
+		"matplotlib",
+		"tqdm",
+		"jaxopt",
+		"flax",
+		"typing-extensions",
+		"tyro",
+		"pandas",
+		"orbax",
+		"orbax-checkpoint",
+		"plyfile",
+		"trimesh",
+		"scipy",
+		"scikit-image",
+	],
+	classifiers=[
+		'Programming Language :: Python :: 3',
+		'License :: OSI Approved :: Apache Software License',
+		'Operating System :: OS Independent',
+	],
+	python_requires='>=3.10',
+)
