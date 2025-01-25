@@ -9,7 +9,7 @@ import flax
 import trimesh
 from dataclasses import field
 
-from evaluation import meshing
+from diffcd.evaluation import meshing
 from diffcd.newton import NewtonConfig
 from diffcd.closest_point import closest_point_newton_batch
 

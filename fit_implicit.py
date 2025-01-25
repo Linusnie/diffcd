@@ -23,7 +23,7 @@ import subprocess
 from trimesh import Trimesh
 
 from diffcd import training, utils, methods, datasets, networks
-from evaluation import chamfer, meshing
+from diffcd.evaluation import chamfer, meshing
 
 # override default checkpoint manager options
 @dataclass

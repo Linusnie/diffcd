@@ -1,1 +1,1 @@
-from diffcd import closest_point, datasets, methods, networks, training, utils
+from diffcd import closest_point, datasets, methods, networks, training, utils, evaluation

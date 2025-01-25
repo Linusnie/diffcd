@@ -11,7 +11,7 @@ import os
 
 import diffcd
 import fit_implicit
-from evaluation import meshing
+from diffcd.evaluation import meshing
 
 def make_test_ply(output_file: Path):
     vertices = np.array([

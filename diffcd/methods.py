@@ -10,7 +10,7 @@ from scipy.spatial import cKDTree
 import numpy as np
 import trimesh
 
-from evaluation import meshing
+from diffcd.evaluation import meshing
 from diffcd.closest_point import sq_norm, closest_point_newton, NewtonConfig
 from diffcd import samplers
 from diffcd.samplers import SamplingConfig, SurfaceSamplingConfig
