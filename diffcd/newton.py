@@ -87,7 +87,7 @@ def newton_kkt_bwd(laplacian, config: NewtonConfig, info, tangent):
     )(args)
 
     # gradient wrt z0 is 0
-    return (0., *jvp,)
+    return (jnp.zeros_like(final_state.z), *jvp)
 
 newton_kkt = jax.custom_vjp(_newton_kkt, nondiff_argnums=(0, 1))
 newton_kkt.defvjp(newton_kkt_fwd, newton_kkt_bwd)
